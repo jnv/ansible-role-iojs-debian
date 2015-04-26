@@ -1,0 +1,6 @@
+---
+# defaults file for iojs-debian
+iojs_version: 1.8.*
+iojs_repo_base: https://deb.nodesource.com/iojs_1.x
+iojs_repo_key_url: https://deb.nodesource.com/gpgkey/nodesource.gpg.key
+iojs_repo_key_id: "1655A0AB68576280"
