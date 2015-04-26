@@ -1,0 +1,20 @@
+---
+# tasks file for iojs-debian
+
+- name: Setup Nodesource GPG key
+  apt_key:
+    url: "{{iojs_repo_key_url}}"
+    id: "{{iojs_repo_key_id}}"
+    state: present
+
+- name: Add the Nodesource repository
+  apt_repository:
+    # 'deb https://deb.nodesource.com/iojs_1.x ${DISTRO} main'
+    repo: "deb {{iojs_repo_base}} {{ansible_distribution_release}} main"
+    state: present
+    update_cache: yes
+
+- name: Install the iojs package
+  apt:
+    name: "iojs={{iojs_version}}"
+    state: present

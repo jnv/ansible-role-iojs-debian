@@ -1,0 +1,21 @@
+---
+galaxy_info:
+  author: Jan Vlnas
+  description: Setup io.js with repository from Nodesource
+  license: CC0
+  min_ansible_version: 1.6
+  platforms:
+  - name: Ubuntu
+    versions:
+    - trusty
+    - vivid
+    - utopic
+  - name: Debian
+    versions:
+    - jessie
+    - sid
+  categories:
+  - development
+  - system
+dependencies: []
+
