@@ -2,6 +2,10 @@
 
 Setup [io.js](https://iojs.org/) repository and install binary package [provided by Nodesource](https://nodesource.com/blog/nodejs-v012-iojs-and-the-nodesource-linux-repositories).
 
+## Deprecated
+
+Use [nodesource.node](https://github.com/nodesource/ansible-nodejs-role) role provided by Nodesource.
+
 ## Supported Distributions
 
 Only the latest versions of Ubuntu and Debian are supported by Nodesource.
